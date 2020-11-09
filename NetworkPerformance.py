@@ -1,9 +1,16 @@
 import subprocess
 import time
 import os
+import ConfigParser
 
 
 print 'Press Ctl-C to exit'
+
+cfg = ConfigParser()
+cfg.read('NetworkPerformance.conf')
+print('CommunityName = ' + cfg.get(NetworkPerformance,CommunityName)
+sleep 10000
+
 
 #functions
 def getSnmpData (oid):
